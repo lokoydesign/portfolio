@@ -1,0 +1,75 @@
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size:var(--font-size);
+  color:var(--color-white--400);
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+a {
+  color: var(--color-white--400);
+  text-decoration: none;
+}
+
+.fancy-link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    width: 50%;
+    height: .128em;
+    background-color: var(--color-white--400);
+    transition: width .25s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  @media (min-width: 48rem) { font-size: 8rem; }
+}
+
+h2 {
+  font-size: 3.5rem;
+  @media (min-width: 48rem) { font-size: 6rem; }
+}
+
+h3 {
+  font-size: 3rem;
+  @media (min-width: 48rem) { font-size: 4rem; }
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: .625rem;
+}
+
+p {
+  line-height: 1.25em;
+  @media (min-width: 48rem) { line-height: 1.5em; }
+}

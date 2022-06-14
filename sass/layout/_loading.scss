@@ -1,0 +1,90 @@
+.loading {
+  background-color: var(--color-blue--600);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: 100;
+  display: grid;
+  grid-gap: 1em;
+  align-content: center;
+  justify-content: center;
+  
+  animation-name: fadeOut;
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  .site-logo {
+    width: 5vw;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &__bar {
+    display: block;
+    position: relative;
+    width: 5vw;
+    height: 0.125em;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: var(--border-color);
+      width: 0;
+      height: 100%;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+      z-index: 200;
+
+      animation-name: loading;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.no-js .loading {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -200;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

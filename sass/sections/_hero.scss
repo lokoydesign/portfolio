@@ -1,0 +1,44 @@
+.hero {
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+
+  @media (min-width: 48rem) {
+    grid-column: 1 / 12;
+    min-height: 94vh;
+    text-align: initial;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    line-height: 0.9em;
+    animation-name: transitionUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  p {
+    font-weight: 400;
+    animation-name: transitionUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .button {
+    font-size: 1.4rem;
+    width: 10em;
+    margin: 1em auto 0;
+    text-align: center;
+
+    @media (min-width: 48rem) {
+      margin: 1em 0 0;
+    }
+  }
+}

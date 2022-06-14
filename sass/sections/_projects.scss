@@ -1,0 +1,14 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 4em 1em;
+  margin-block-end: 4em;
+  
+  @media (min-width: 48rem) {
+    grid-column: span 12;
+    text-align: initial;
+    margin-block-end: 20em;
+    gap: 8em 2em;
+  }
+}

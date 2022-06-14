@@ -1,0 +1,32 @@
+.scroll-to-top {
+  display: none;
+  
+  @media (min-width: 48rem) {
+    display: none;
+    position: fixed;
+    inset-inline-end: -50em;
+    inset-block-start: .5em;
+    writing-mode: vertical-rl;
+    font-weight: 400;
+    transition: 1s ease-in-out;
+    
+    i {
+      margin-block-end: 0.25em;
+    }
+
+    &:hover i {
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  }
+ 
+  @media (min-width: 94rem) {
+    inset-inline-end: 2em;
+  }
+}
+
+.js .scroll-to-top {
+  display: block;
+}

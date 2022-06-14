@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio - Lokøy Design</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hey, jeg heter Kenneth og jeg liker å bygge ting">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#F7FFF1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="/style.css?v=1.0.0">
+</head>
+<body class="no-js">
+  <div class="loading">
+    <img class="site-logo" alt="Site logo" src="/assets/images/logo.svg" />
+    <span class="loading__bar"></span>
+  </div>
+  
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-logo-wrapper">
+        <a href="/">
+          <img class="site-logo" alt="Site logo" src="/assets/images/logo.svg" />
+        </a>
+      </div>
+
+      <nav class="site-navigation">
+        <a href="#projects">Prosjekter</a>
+        <a href="#art">Grafisk design</a>
+        <a href="/cv.pdf">CV</a>
+      </nav>
+
+      <div class="social-media">
+        <a href="https://dribbble.com/Kniffen" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://github.com/kniffen" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kennethlokoy/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </header>
+
+    <div class="hero">
+      <p>Hei, jeg heter Kenneth og...</p>
+      <h1>Jeg liker å<br/>bygge ting</h1> 
+      <a class="button" href="#projects">Se prosjekter</a>
+    </div>
+    
+    <a id="projects"></a>
+    <section class="projects">
+      <header class="section-header">
+        <h2 class="section-header__title">Prosjekter</h2>
+      </header>
+
+      <div class="project">
+        <h3 class="project__title">Gratis Themes</h3>
+        <a class="project__screenshot" href="https://gratis-themes.com" target="_blank">
+          <img src="/assets/images/projects/gratis-themes/screenshot.jpg" />
+        </a>
+        <p class="project__description">En samling gratis WordPress-temaer jeg har designet og laget opp gjennom årene.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://wordpress.org" target="__blank">WordPress</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/HTML" target="__blank">HTML</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://www.php.net" target="__blank">PHP</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sass-lang.com/" target="__blank">Sass/SCSS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/JavaScript" target="__blank">JavaScript</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://gulpjs.com/" target="__blank">Gulp</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button button--primary" href="https://gratis-themes.com" target="_blank">Se temaer</a>
+          <a class="button" href="https://github.com/orgs/GratisThemes/repositories" target="_blank"><i class="fab fa-github"></i> Kildekoder</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project__title">TruckSim-Telemetry</h3>
+        <a class="project__screenshot" href="https://tst.kniffen.dev" target="_blank">
+          <img src="/assets/images/projects/trucksim-telemetry/screenshot.jpg" />
+        </a>
+        <p class="project__description">TruckSim-Telemetry er en Nodemodul som analyserer telemetridata for spillene Euro Truck Simulator 2 og American Truck Simulator.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://www.npmjs.com/" target="__blank">NPM</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://nodejs.org/" target="__blank">Node.js</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="__blank">C</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://www.electronjs.org/" target="__blank">Electron</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://vuejs.org/" target="__blank">Vue.js</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sinonjs.org/" target="__blank">Sinon.JS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://mochajs.org/" target="__blank">Mocha</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button button--primary" href="https://tst.kniffen.dev" target="_blank">Se dokumentasjon</a>
+          <a class="button" href="https://github.com/kniffen/TruckSim-Telemetry" target="_blank"><i class="fab fa-github"></i> Kildekode</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project__title">Desmo2020</h3>
+        <a class="project__screenshot" href="https://brilliant-pearl.com" target="_blank">
+          <img src="/assets/images/projects/desmo2020/desmo2020.jpg" alt="Desmo2020"/>
+        </a>
+        <p class="project__description">Desmo2020 er et spesialtilpasset WordPress-tema laget for Brilliant-Pearl, et oppdrett av hunderasen Whippet.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://wordpress.org" target="__blank">WordPress</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/HTML" target="__blank">HTML</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://www.php.net" target="__blank">PHP</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sass-lang.com/" target="__blank">Sass/SCSS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/JavaScript" target="__blank">JavaScript</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://gulpjs.com/" target="__blank">Gulp</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button" href="https://brilliant-pearl.com" target="_blank">Besøk nettside</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project__title">MBEK2016</h3>
+        <a class="project__screenshot" href="https://mbek.no" target="_blank">
+          <img src="/assets/images/projects/mbek2016/mbek2016.jpg" alt="MBEK2016"/>
+        </a>
+        <p class="project__description">Spesialtilpasset WordPress-tema laget for motorklubben Mercedes-Benz Entusiaskklubb i 2016.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://wordpress.org" target="__blank">WordPress</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/HTML" target="__blank">HTML</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://www.php.net" target="__blank">PHP</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sass-lang.com/" target="__blank">Sass/SCSS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/JavaScript" target="__blank">JavaScript</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://gulpjs.com/" target="__blank">Gulp</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button" href="https://mbek.no" target="_blank">Besøk nettside</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project__title">Nonopunk</h3>
+        <a class="project__screenshot" href="https://nonopunk.kniffen.dev" target="_blank">
+          <img src="/assets/images/projects/nonopunk/screenshot.jpg" />
+        </a>
+        <p class="project__description">NonoPunk er et Nonogram-spill laget i JavaScript og HTML canvas.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button" href="https://Nonopunk.kniffen.dev" target="_blank">Spill Nonopunk</a>
+        </div>
+      </div>
+
+      <div class="project project--small">
+        <h4 class="project__title">live_streams.sii-editor</h4>
+        <p class="project__description">Verktøy for å lett kunne redigere listen over radio kanaler for spillene Euro Truck Simulator 2 og American Truck Simulator.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/HTML" target="__blank">HTML</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sass-lang.com/" target="__blank">Sass/SCSS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button button--primary" href="https://livestreamssii.kniffen.dev/" target="_blank">Prøv</a>
+          <a class="button" href="https://github.com/kniffen/live_streams.sii-editor" target="_blank"><i class="fab fa-github"></i> Kildekode</a>
+        </div>
+      </div>
+
+      <div class="project project--small">
+        <h4 class="project__title">Nonogram-Maker</h4>
+        <p class="project__description">Nonogram-Maker er et verktøy for å generere Nonogram spill i forskjellige størrelser.</p>
+        <ul class="project__tags">
+          <li class="project__tags__tag">
+            <a href="https://wikipedia.org/wiki/HTML" target="__blank">HTML</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://sass-lang.com/" target="__blank">Sass/SCSS</a>
+          </li>
+          <li class="project__tags__tag">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+          </li>
+        </ul>
+        <div class="project__buttons">
+          <a class="button button--primary" href="https://nonogram.kniffen.dev/" target="_blank">Prøv</a>
+          <a class="button" href="https://github.com/kniffen/Nonogram-Maker" target="_blank"><i class="fab fa-github"></i> Kildekode</a>
+        </div>
+      </div>
+    </section>
+
+    <a id="art"></a>
+    <section class="art">
+      <header class="section-header">
+        <h2 class="section-header__title">Grafisk design</h2>
+      </header>
+      <div class="gallery">
+        <img class="gallery-item__mjolnir" src="/assets/images/art/mjolnir.jpg" alt="Mjolnir poster" />
+        <img class="gallery-item__rottr" src="/assets/images/art/rottr.jpg" alt="Rise of the Tomb Raider poster" />
+        <img class="gallery-item__p" src="/assets/images/art/p.jpg" alt="Paper P" />
+        <img class="gallery-item__v" src="/assets/images/art/v.jpg" alt="3D V" />
+        <img class="gallery-item__u" src="/assets/images/art/u.jpg" alt="Mechanical U" />
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-item">
+        <h4>Ta kontakt</h4>
+        <p><b>E-post:</b> <a class="fancy-link" href="mailto:kennethlokoy@gmail.com">kennethlokoy@gmail.com</a></p>
+      </div>
+  
+      <div class="footer-item">
+        <h4>Sosiale medier</h4>
+        <nav class="social-media">
+          <a href="https://github.com/kniffen" target="_blank"<i class="fab fa-github"></i></a>
+          <a href="https://dribbble.com/Kniffen" target="_blank"><i class="fab fa-dribbble"></i></a>
+          <a href="https://www.linkedin.com/in/kennethlokoy/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <p>Copyright @ Lokøy Design 2022</p>
+    </div>
+
+    <a class="scroll-to-top" href="#"><i class="fa fa-chevron-up"></i>Scroll to the top</a>
+  </div>
+
+  <script src="/main.js?v=1.0.0"></script>
+</body>
+</html>

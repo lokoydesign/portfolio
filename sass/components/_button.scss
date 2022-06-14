@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  display: inline-block;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-family-heading);
+  padding: .5em 1em;
+  transition: .5s ease-in-out;
+
+  &::before {
+    content: '';
+    background-color: var(--color-white--400);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    transition: width .25s ease-in-out;
+  }
+
+  &:hover {
+    color: var(--color-blue--600);
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.button--primary {
+  background-color: var(--color-white--400);
+  color: var(--color-blue--600);
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}

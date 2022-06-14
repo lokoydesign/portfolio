@@ -1,0 +1,21 @@
+@import "normalize";
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-blue--600);
+  margin: 0;
+  padding: 0;
+}
+
+@import  "media";
+@import  "typography";

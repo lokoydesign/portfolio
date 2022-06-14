@@ -1,0 +1,18 @@
+.site-container {
+  padding: 1em;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  @media (min-width: 48rem) {
+    display: grid;
+    padding: 2em;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1em;
+    max-width: 90em;
+    margin: 0 auto;
+   
+    > a {
+      grid-column: 2;
+    }
+  }
+}

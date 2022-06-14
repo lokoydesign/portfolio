@@ -1,0 +1,21 @@
+:root {
+  --color-blue--600: #141F26;
+  --color-blue--400: #23455A;
+
+  --color-white--200: #FFFFFF;
+  --color-white--400: #F7FFF1;
+  --color-white--600: #dae4d2;
+
+  --font-family: 'Roboto', sans-serif;
+  --font-family-heading: 'Rajdhani', sans-serif;
+  
+  --font-size: 1rem;
+  --font-weight: 300;
+  --font-style: normal;
+  
+  --border-color: var(--color-white--400);
+  --border-width: .125em;
+  --border-radius: .25em;
+  --border-style: solid;
+  --border: var(--border-width) var(--border-style) var(--border-color);
+}

@@ -1,0 +1,89 @@
+.site-header {
+  animation-name: transitionDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+
+  .social-media {
+    text-align: center;
+  }
+
+  @media (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    grid-column: span 12;
+  }
+}
+
+.site-logo-wrapper {
+  position: relative;
+  display: block;
+  width: 3em;
+  height: 3em;
+  overflow: hidden;
+  transition: width .5s ease-in-out;
+  margin-inline: auto;
+
+  @media (min-width: 48rem) {
+    margin-inline: 0;
+  }
+
+  img {
+    position: absolute;
+    height: 75%;
+    margin-block: auto;
+    inset-block: 0;
+    inset-inline-start: 0;
+    max-width: none;
+  }
+
+  &:hover {
+    width: 20em;
+  }
+}
+
+.site-navigation {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 400;
+
+  @media (min-width: 48rem) {
+    padding: 0;
+    flex: 1;
+    text-align: right;
+  }
+
+  > * + * {
+    margin-inline-start: 1em;
+
+    @media (min-width: 48rem) {
+      margin-inline-start: 2em;
+    }
+  }
+
+  a {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: var(--border-color);
+      opacity: 0;
+      width: 0;
+      height: .0625em;
+      inset-block-end: -.25em;
+      inset-inline-start: 0;
+      transition:
+        width 0.25s ease-in-out,
+        opacity 0.15s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}

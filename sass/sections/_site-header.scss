@@ -57,7 +57,7 @@
   }
 
   > * + * {
-    margin-inline-start: 1em;
+    margin-inline-start: .5em;
 
     @media (min-width: 48rem) {
       margin-inline-start: 2em;

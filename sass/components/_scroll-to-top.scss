@@ -28,5 +28,7 @@
 }
 
 .js .scroll-to-top {
-  display: block;
+  @media (min-width: 48rem) {
+    display: block;
+  }
 }

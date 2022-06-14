@@ -7,7 +7,7 @@
   min-height: 75vh;
 
   @media (min-width: 48rem) {
-    grid-column: 1 / 12;
+    grid-column: span 12;
     min-height: 94vh;
     text-align: initial;
   }
@@ -22,6 +22,15 @@
     animation-name: transitionUp;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
+    font-size: 3.3rem;
+
+    @media (min-width: 26rem) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: 48rem) {
+      font-size: 7rem;
+    }
   }
 
   p {

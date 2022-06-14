@@ -11,4 +11,14 @@
     margin-block-end: 20em;
     gap: 8em 2em;
   }
+
+  .section-header {
+    &__title {
+      font-size: 3.3rem;
+
+      @media (min-width: 48rem) {
+        font-size: 5rem;
+      }
+    }
+  }
 }

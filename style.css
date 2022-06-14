@@ -631,7 +631,7 @@ p {
   }
 }
 .site-navigation > * + * {
-  margin-inline-start: 1em;
+  margin-inline-start: 0.5em;
 }
 @media (min-width: 48rem) {
   .site-navigation > * + * {
@@ -667,7 +667,7 @@ p {
 }
 @media (min-width: 48rem) {
   .hero {
-    grid-column: 1/12;
+    grid-column: span 12;
     min-height: 94vh;
     text-align: initial;
   }
@@ -681,6 +681,17 @@ p {
   animation-name: transitionUp;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
+  font-size: 3.3rem;
+}
+@media (min-width: 26rem) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 48rem) {
+  .hero h1 {
+    font-size: 7rem;
+  }
 }
 .hero p {
   font-weight: 400;
@@ -713,6 +724,14 @@ p {
     text-align: initial;
     margin-block-end: 20em;
     gap: 8em 2em;
+  }
+}
+.projects .section-header__title {
+  font-size: 3.3rem;
+}
+@media (min-width: 48rem) {
+  .projects .section-header__title {
+    font-size: 5rem;
   }
 }
 
@@ -864,8 +883,10 @@ p {
   }
 }
 
-.js .scroll-to-top {
-  display: block;
+@media (min-width: 48rem) {
+  .js .scroll-to-top {
+    display: block;
+  }
 }
 
 .section-header {

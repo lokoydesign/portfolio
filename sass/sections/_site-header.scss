@@ -23,7 +23,6 @@
   width: 3em;
   height: 3em;
   overflow: hidden;
-  transition: width .5s ease-in-out;
   margin-inline: auto;
 
   @media (min-width: 48rem) {
@@ -37,10 +36,6 @@
     inset-block: 0;
     inset-inline-start: 0;
     max-width: none;
-  }
-
-  &:hover {
-    width: 20em;
   }
 }
 

@@ -597,7 +597,6 @@ p {
   width: 3em;
   height: 3em;
   overflow: hidden;
-  transition: width 0.5s ease-in-out;
   margin-inline: auto;
 }
 @media (min-width: 48rem) {
@@ -612,9 +611,6 @@ p {
   inset-block: 0;
   inset-inline-start: 0;
   max-width: none;
-}
-.site-logo-wrapper:hover {
-  width: 20em;
 }
 
 .site-navigation {

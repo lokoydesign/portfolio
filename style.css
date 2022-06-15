@@ -829,9 +829,9 @@ p {
   background-color: var(--color-white--400);
   position: absolute;
   width: 0;
-  height: 100%;
-  inset-block-start: 0;
-  inset-inline-start: 0;
+  height: calc(100% + 0.128em);
+  inset-block-start: -0.0652em;
+  inset-inline-start: -0.0652em;
   z-index: -1;
   transition: width 0.25s ease-in-out;
 }
@@ -839,7 +839,7 @@ p {
   color: var(--color-blue--600);
 }
 .button:hover::before {
-  width: 100%;
+  width: calc(100% + 0.128em);
 }
 
 .button--primary {

@@ -14,9 +14,9 @@
     background-color: var(--color-white--400);
     position: absolute;
     width: 0;
-    height: 100%;
-    inset-block-start: 0;
-    inset-inline-start: 0;
+    height: calc(100% + .128em);
+    inset-block-start: -.0652em;
+    inset-inline-start: -.0652em;
     z-index: -1;
     transition: width .25s ease-in-out;
   }
@@ -26,7 +26,7 @@
   }
 
   &:hover::before {
-    width: 100%;
+    width: calc(100% + .128em);
   }
 }
 

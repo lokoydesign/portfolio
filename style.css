@@ -572,13 +572,6 @@ p {
   }
 }
 
-.site-header {
-  animation-name: transitionDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-}
 .site-header .social-media {
   text-align: center;
 }
@@ -589,6 +582,14 @@ p {
     gap: 4em;
     grid-column: span 12;
   }
+}
+
+.home .site-header {
+  animation-name: transitionDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .site-logo-wrapper {
@@ -786,6 +787,14 @@ p {
     width: calc(50% - 1em);
   }
 }
+.main-404 {
+  grid-column: span 12;
+  min-height: 50vh;
+}
+.main-404__title {
+  margin-block-end: 0.25em;
+}
+
 .site-footer {
   padding-block: 1em;
 }
@@ -899,11 +908,6 @@ p {
 .social-media {
   font-size: 1.5rem;
   margin-bottom: 1em;
-  animation-name: transitionUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
 }
 @media (min-width: 48rem) {
   .social-media {

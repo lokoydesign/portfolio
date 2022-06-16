@@ -1,0 +1,8 @@
+.main-404 {
+  grid-column: span 12;
+  min-height: 50vh;
+
+  &__title {
+    margin-block-end: .25em;
+  }
+}

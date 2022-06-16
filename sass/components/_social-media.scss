@@ -1,12 +1,7 @@
 .social-media {
   font-size: 1.5rem;
   margin-bottom: 1em;
-  animation-name: transitionUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-
+  
   @media (min-width: 48rem) {
     margin-block-end: 0;
   }

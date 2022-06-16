@@ -1,10 +1,4 @@
 .site-header {
-  animation-name: transitionDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-
   .social-media {
     text-align: center;
   }
@@ -15,6 +9,14 @@
     gap: 4em;
     grid-column: span 12;
   }
+}
+
+.home .site-header {
+  animation-name: transitionDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .site-logo-wrapper {

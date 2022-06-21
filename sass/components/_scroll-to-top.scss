@@ -1,7 +1,7 @@
 .scroll-to-top {
   display: none;
   
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     display: none;
     position: fixed;
     inset-inline-end: -50em;
@@ -22,13 +22,13 @@
     }
   }
  
-  @media (min-width: 94rem) {
+  @media (min-width: 94em) {
     inset-inline-end: 2em;
   }
 }
 
 .js .scroll-to-top {
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     display: block;
   }
 }

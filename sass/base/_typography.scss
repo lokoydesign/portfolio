@@ -44,17 +44,17 @@ h6 {
 
 h1 {
   font-size: 4rem;
-  @media (min-width: 48rem) { font-size: 8rem; }
+  @media (min-width: 48em) { font-size: 8rem; }
 }
 
 h2 {
   font-size: 3.5rem;
-  @media (min-width: 48rem) { font-size: 6rem; }
+  @media (min-width: 48em) { font-size: 6rem; }
 }
 
 h3 {
   font-size: 3rem;
-  @media (min-width: 48rem) { font-size: 4rem; }
+  @media (min-width: 48em) { font-size: 4rem; }
 }
 
 h4 {
@@ -71,5 +71,5 @@ h6 {
 
 p {
   line-height: 1.25em;
-  @media (min-width: 48rem) { line-height: 1.5em; }
+  @media (min-width: 48em) { line-height: 1.5em; }
 }

@@ -6,7 +6,7 @@
   justify-content: center;
   min-height: 75vh;
 
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     grid-column: span 12;
     min-height: 94vh;
     text-align: initial;
@@ -24,11 +24,11 @@
     animation-timing-function: ease-in-out;
     font-size: 3.3rem;
 
-    @media (min-width: 26rem) {
+    @media (min-width: 26em) {
       font-size: 4rem;
     }
 
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       font-size: 7rem;
     }
   }
@@ -46,7 +46,7 @@
     margin: 1em auto 0;
     text-align: center;
 
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       margin: 1em 0 0;
     }
   }

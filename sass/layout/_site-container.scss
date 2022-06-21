@@ -3,7 +3,7 @@
   width: 100%;
   scroll-behavior: smooth;
 
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     display: grid;
     padding: 2em;
     grid-template-columns: repeat(12, 1fr);

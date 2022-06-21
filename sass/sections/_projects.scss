@@ -5,7 +5,7 @@
   gap: 4em 1em;
   margin-block-end: 4em;
   
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     grid-column: span 12;
     text-align: initial;
     margin-block-end: 20em;
@@ -16,7 +16,7 @@
     &__title {
       font-size: 3.3rem;
 
-      @media (min-width: 48rem) {
+      @media (min-width: 48em) {
         font-size: 5rem;
       }
     }

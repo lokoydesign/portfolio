@@ -1,7 +1,7 @@
 .project {
   grid-column: span 2;
 
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0 2em;
@@ -37,7 +37,7 @@
   }
 
   > * {
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       grid-column: span 5;
     }
   }
@@ -45,13 +45,13 @@
   &__title {
     margin-block-end: 0.5em;
 
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       margin: 0;
     }
   }
 
   &__screenshot {
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       position: relative;
       display: block;
       border-radius: var(--border-radius);
@@ -95,7 +95,7 @@
     font-size: .8rem;
     justify-content: center;
 
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       justify-content: flex-start;
     }
     
@@ -113,14 +113,14 @@
     gap: .5em;
     margin-block-start: 1em;
 
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       justify-content: flex-start;
     }
   }
 }
 
 .project.project--small {
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     text-align: left;
     grid-column: span 1;
     grid-template-columns: 1fr;
